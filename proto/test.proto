@@ -1,0 +1,31 @@
+syntax = "proto3";
+option go_package = "./test";
+
+/* SearchRequest represents a search query, with pagination options to
+ * indicate which results to include in the response. */
+message SearchRequest {
+  string query = 1;
+  int32 page_number = 2; // hello number 
+  int32 result_per_page = 3; // number yoyo
+}
+
+message Foo {
+  reserved 2, 15, 9 to 11;
+  reserved "foo", "bar";
+}
+
+message MyMessage1 {
+  enum EnumAllowingAlias {
+    option allow_alias = true;
+    UNKNOWN = 0;
+    STARTED = 1;
+    RUNNING = 1;
+  }
+}
+message MyMessage2 {
+  enum EnumNotAllowingAlias {
+    UNKNOWN = 0;
+    STARTED = 1;
+    // RUNNING = 1;  // Uncommenting this line will cause a compile error inside Google and a warning message outside.
+  }
+}
