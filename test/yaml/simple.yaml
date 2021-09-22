@@ -1,1 +1,37 @@
-query: "1"
+---
+# init is mandatory.
+init:
+  # repo is our git repo to clone
+  # if defined, we do a git clone and copy directly into base_image
+  repo:
+    # link is https or ssh git link
+    link: https://github.com/edify42/dummy
+    # branches to run this step against 
+    branch_filter: master
+  # base_image is our docker image to run stuff in
+  base_image: ubuntu:alpine
+  # docker_repo is mandatory and is where we shall cache the step
+  docker_repo: tedk42/simple
+  # bool whether to push init to remote.
+  docker_push: true
+  # bool whether we push local builds (default false), overrides above
+  docker_push_local: true
+  # env (kv maps) - KEY is the exported environment variable, value_1 is the value.
+  env:
+    KEY: value_1
+    KEY_2: value_2
+  # secrets (kv maps) - pointer to secrets
+  secrets:
+    SPECIAL_KEY: pointer-to-secret
+    SUPER_SECRET: pointer-to-secret
+  # commands - array that supports interpolation.
+  # should be run is dockerfile RUN commands
+  commands:
+    - "echo what shell commands should i do?"
+    - "echo allow for yaml $INTERPOLATED variables"
+    - ESCAPED='yeah'; echo allow for shell ${ESCAPED} variables
+    - echo we want to see ${KEY}
+
+# do things below!
+main:
+  - name: first step to execute. normal yaml array.
