@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.17.3
-// source: proto/test.proto
+// source: test.proto
 
 package test
 
@@ -53,11 +53,11 @@ func (x MyMessage1_EnumAllowingAlias) String() string {
 }
 
 func (MyMessage1_EnumAllowingAlias) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_test_proto_enumTypes[0].Descriptor()
+	return file_test_proto_enumTypes[0].Descriptor()
 }
 
 func (MyMessage1_EnumAllowingAlias) Type() protoreflect.EnumType {
-	return &file_proto_test_proto_enumTypes[0]
+	return &file_test_proto_enumTypes[0]
 }
 
 func (x MyMessage1_EnumAllowingAlias) Number() protoreflect.EnumNumber {
@@ -66,7 +66,7 @@ func (x MyMessage1_EnumAllowingAlias) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use MyMessage1_EnumAllowingAlias.Descriptor instead.
 func (MyMessage1_EnumAllowingAlias) EnumDescriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{2, 0}
+	return file_test_proto_rawDescGZIP(), []int{2, 0}
 }
 
 type MyMessage2_EnumNotAllowingAlias int32
@@ -99,11 +99,11 @@ func (x MyMessage2_EnumNotAllowingAlias) String() string {
 }
 
 func (MyMessage2_EnumNotAllowingAlias) Descriptor() protoreflect.EnumDescriptor {
-	return file_proto_test_proto_enumTypes[1].Descriptor()
+	return file_test_proto_enumTypes[1].Descriptor()
 }
 
 func (MyMessage2_EnumNotAllowingAlias) Type() protoreflect.EnumType {
-	return &file_proto_test_proto_enumTypes[1]
+	return &file_test_proto_enumTypes[1]
 }
 
 func (x MyMessage2_EnumNotAllowingAlias) Number() protoreflect.EnumNumber {
@@ -112,7 +112,7 @@ func (x MyMessage2_EnumNotAllowingAlias) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use MyMessage2_EnumNotAllowingAlias.Descriptor instead.
 func (MyMessage2_EnumNotAllowingAlias) EnumDescriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{3, 0}
+	return file_test_proto_rawDescGZIP(), []int{3, 0}
 }
 
 // SearchRequest represents a search query, with pagination options to
@@ -130,7 +130,7 @@ type SearchRequest struct {
 func (x *SearchRequest) Reset() {
 	*x = SearchRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_test_proto_msgTypes[0]
+		mi := &file_test_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -143,7 +143,7 @@ func (x *SearchRequest) String() string {
 func (*SearchRequest) ProtoMessage() {}
 
 func (x *SearchRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_test_proto_msgTypes[0]
+	mi := &file_test_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -156,7 +156,7 @@ func (x *SearchRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SearchRequest.ProtoReflect.Descriptor instead.
 func (*SearchRequest) Descriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{0}
+	return file_test_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *SearchRequest) GetQuery() string {
@@ -189,7 +189,7 @@ type Foo struct {
 func (x *Foo) Reset() {
 	*x = Foo{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_test_proto_msgTypes[1]
+		mi := &file_test_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -202,7 +202,7 @@ func (x *Foo) String() string {
 func (*Foo) ProtoMessage() {}
 
 func (x *Foo) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_test_proto_msgTypes[1]
+	mi := &file_test_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -215,7 +215,7 @@ func (x *Foo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Foo.ProtoReflect.Descriptor instead.
 func (*Foo) Descriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{1}
+	return file_test_proto_rawDescGZIP(), []int{1}
 }
 
 type MyMessage1 struct {
@@ -227,7 +227,7 @@ type MyMessage1 struct {
 func (x *MyMessage1) Reset() {
 	*x = MyMessage1{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_test_proto_msgTypes[2]
+		mi := &file_test_proto_msgTypes[2]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -240,7 +240,7 @@ func (x *MyMessage1) String() string {
 func (*MyMessage1) ProtoMessage() {}
 
 func (x *MyMessage1) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_test_proto_msgTypes[2]
+	mi := &file_test_proto_msgTypes[2]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -253,7 +253,7 @@ func (x *MyMessage1) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MyMessage1.ProtoReflect.Descriptor instead.
 func (*MyMessage1) Descriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{2}
+	return file_test_proto_rawDescGZIP(), []int{2}
 }
 
 type MyMessage2 struct {
@@ -265,7 +265,7 @@ type MyMessage2 struct {
 func (x *MyMessage2) Reset() {
 	*x = MyMessage2{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_test_proto_msgTypes[3]
+		mi := &file_test_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -278,7 +278,7 @@ func (x *MyMessage2) String() string {
 func (*MyMessage2) ProtoMessage() {}
 
 func (x *MyMessage2) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_test_proto_msgTypes[3]
+	mi := &file_test_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -291,50 +291,49 @@ func (x *MyMessage2) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MyMessage2.ProtoReflect.Descriptor instead.
 func (*MyMessage2) Descriptor() ([]byte, []int) {
-	return file_proto_test_proto_rawDescGZIP(), []int{3}
+	return file_test_proto_rawDescGZIP(), []int{3}
 }
 
-var File_proto_test_proto protoreflect.FileDescriptor
+var File_test_proto protoreflect.FileDescriptor
 
-var file_proto_test_proto_rawDesc = []byte{
-	0x0a, 0x10, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x2e, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x22, 0x6e, 0x0a, 0x0d, 0x53, 0x65, 0x61, 0x72, 0x63, 0x68, 0x52, 0x65, 0x71, 0x75,
-	0x65, 0x73, 0x74, 0x12, 0x14, 0x0a, 0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x18, 0x01, 0x20, 0x01,
-	0x28, 0x09, 0x52, 0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x12, 0x1f, 0x0a, 0x0b, 0x70, 0x61, 0x67,
-	0x65, 0x5f, 0x6e, 0x75, 0x6d, 0x62, 0x65, 0x72, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0a,
-	0x70, 0x61, 0x67, 0x65, 0x4e, 0x75, 0x6d, 0x62, 0x65, 0x72, 0x12, 0x26, 0x0a, 0x0f, 0x72, 0x65,
-	0x73, 0x75, 0x6c, 0x74, 0x5f, 0x70, 0x65, 0x72, 0x5f, 0x70, 0x61, 0x67, 0x65, 0x18, 0x03, 0x20,
-	0x01, 0x28, 0x05, 0x52, 0x0d, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x50, 0x65, 0x72, 0x50, 0x61,
-	0x67, 0x65, 0x22, 0x21, 0x0a, 0x03, 0x46, 0x6f, 0x6f, 0x4a, 0x04, 0x08, 0x02, 0x10, 0x03, 0x4a,
-	0x04, 0x08, 0x0f, 0x10, 0x10, 0x4a, 0x04, 0x08, 0x09, 0x10, 0x0c, 0x52, 0x03, 0x66, 0x6f, 0x6f,
-	0x52, 0x03, 0x62, 0x61, 0x72, 0x22, 0x4c, 0x0a, 0x0a, 0x4d, 0x79, 0x4d, 0x65, 0x73, 0x73, 0x61,
-	0x67, 0x65, 0x31, 0x22, 0x3e, 0x0a, 0x11, 0x45, 0x6e, 0x75, 0x6d, 0x41, 0x6c, 0x6c, 0x6f, 0x77,
-	0x69, 0x6e, 0x67, 0x41, 0x6c, 0x69, 0x61, 0x73, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x4e, 0x4b, 0x4e,
-	0x4f, 0x57, 0x4e, 0x10, 0x00, 0x12, 0x0b, 0x0a, 0x07, 0x53, 0x54, 0x41, 0x52, 0x54, 0x45, 0x44,
-	0x10, 0x01, 0x12, 0x0b, 0x0a, 0x07, 0x52, 0x55, 0x4e, 0x4e, 0x49, 0x4e, 0x47, 0x10, 0x01, 0x1a,
-	0x02, 0x10, 0x01, 0x22, 0x3e, 0x0a, 0x0a, 0x4d, 0x79, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x32, 0x22, 0x30, 0x0a, 0x14, 0x45, 0x6e, 0x75, 0x6d, 0x4e, 0x6f, 0x74, 0x41, 0x6c, 0x6c, 0x6f,
-	0x77, 0x69, 0x6e, 0x67, 0x41, 0x6c, 0x69, 0x61, 0x73, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x4e, 0x4b,
-	0x4e, 0x4f, 0x57, 0x4e, 0x10, 0x00, 0x12, 0x0b, 0x0a, 0x07, 0x53, 0x54, 0x41, 0x52, 0x54, 0x45,
-	0x44, 0x10, 0x01, 0x42, 0x08, 0x5a, 0x06, 0x2e, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x62, 0x06, 0x70,
-	0x72, 0x6f, 0x74, 0x6f, 0x33,
+var file_test_proto_rawDesc = []byte{
+	0x0a, 0x0a, 0x74, 0x65, 0x73, 0x74, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x6e, 0x0a, 0x0d,
+	0x53, 0x65, 0x61, 0x72, 0x63, 0x68, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x14, 0x0a,
+	0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x71, 0x75,
+	0x65, 0x72, 0x79, 0x12, 0x1f, 0x0a, 0x0b, 0x70, 0x61, 0x67, 0x65, 0x5f, 0x6e, 0x75, 0x6d, 0x62,
+	0x65, 0x72, 0x18, 0x02, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0a, 0x70, 0x61, 0x67, 0x65, 0x4e, 0x75,
+	0x6d, 0x62, 0x65, 0x72, 0x12, 0x26, 0x0a, 0x0f, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x5f, 0x70,
+	0x65, 0x72, 0x5f, 0x70, 0x61, 0x67, 0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x05, 0x52, 0x0d, 0x72,
+	0x65, 0x73, 0x75, 0x6c, 0x74, 0x50, 0x65, 0x72, 0x50, 0x61, 0x67, 0x65, 0x22, 0x21, 0x0a, 0x03,
+	0x46, 0x6f, 0x6f, 0x4a, 0x04, 0x08, 0x02, 0x10, 0x03, 0x4a, 0x04, 0x08, 0x0f, 0x10, 0x10, 0x4a,
+	0x04, 0x08, 0x09, 0x10, 0x0c, 0x52, 0x03, 0x66, 0x6f, 0x6f, 0x52, 0x03, 0x62, 0x61, 0x72, 0x22,
+	0x4c, 0x0a, 0x0a, 0x4d, 0x79, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x31, 0x22, 0x3e, 0x0a,
+	0x11, 0x45, 0x6e, 0x75, 0x6d, 0x41, 0x6c, 0x6c, 0x6f, 0x77, 0x69, 0x6e, 0x67, 0x41, 0x6c, 0x69,
+	0x61, 0x73, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x4e, 0x4b, 0x4e, 0x4f, 0x57, 0x4e, 0x10, 0x00, 0x12,
+	0x0b, 0x0a, 0x07, 0x53, 0x54, 0x41, 0x52, 0x54, 0x45, 0x44, 0x10, 0x01, 0x12, 0x0b, 0x0a, 0x07,
+	0x52, 0x55, 0x4e, 0x4e, 0x49, 0x4e, 0x47, 0x10, 0x01, 0x1a, 0x02, 0x10, 0x01, 0x22, 0x3e, 0x0a,
+	0x0a, 0x4d, 0x79, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x32, 0x22, 0x30, 0x0a, 0x14, 0x45,
+	0x6e, 0x75, 0x6d, 0x4e, 0x6f, 0x74, 0x41, 0x6c, 0x6c, 0x6f, 0x77, 0x69, 0x6e, 0x67, 0x41, 0x6c,
+	0x69, 0x61, 0x73, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x4e, 0x4b, 0x4e, 0x4f, 0x57, 0x4e, 0x10, 0x00,
+	0x12, 0x0b, 0x0a, 0x07, 0x53, 0x54, 0x41, 0x52, 0x54, 0x45, 0x44, 0x10, 0x01, 0x42, 0x08, 0x5a,
+	0x06, 0x2e, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_proto_test_proto_rawDescOnce sync.Once
-	file_proto_test_proto_rawDescData = file_proto_test_proto_rawDesc
+	file_test_proto_rawDescOnce sync.Once
+	file_test_proto_rawDescData = file_test_proto_rawDesc
 )
 
-func file_proto_test_proto_rawDescGZIP() []byte {
-	file_proto_test_proto_rawDescOnce.Do(func() {
-		file_proto_test_proto_rawDescData = protoimpl.X.CompressGZIP(file_proto_test_proto_rawDescData)
+func file_test_proto_rawDescGZIP() []byte {
+	file_test_proto_rawDescOnce.Do(func() {
+		file_test_proto_rawDescData = protoimpl.X.CompressGZIP(file_test_proto_rawDescData)
 	})
-	return file_proto_test_proto_rawDescData
+	return file_test_proto_rawDescData
 }
 
-var file_proto_test_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
-var file_proto_test_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_proto_test_proto_goTypes = []interface{}{
+var file_test_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
+var file_test_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_test_proto_goTypes = []interface{}{
 	(MyMessage1_EnumAllowingAlias)(0),    // 0: MyMessage1.EnumAllowingAlias
 	(MyMessage2_EnumNotAllowingAlias)(0), // 1: MyMessage2.EnumNotAllowingAlias
 	(*SearchRequest)(nil),                // 2: SearchRequest
@@ -342,7 +341,7 @@ var file_proto_test_proto_goTypes = []interface{}{
 	(*MyMessage1)(nil),                   // 4: MyMessage1
 	(*MyMessage2)(nil),                   // 5: MyMessage2
 }
-var file_proto_test_proto_depIdxs = []int32{
+var file_test_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -350,13 +349,13 @@ var file_proto_test_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_proto_test_proto_init() }
-func file_proto_test_proto_init() {
-	if File_proto_test_proto != nil {
+func init() { file_test_proto_init() }
+func file_test_proto_init() {
+	if File_test_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_proto_test_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_test_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SearchRequest); i {
 			case 0:
 				return &v.state
@@ -368,7 +367,7 @@ func file_proto_test_proto_init() {
 				return nil
 			}
 		}
-		file_proto_test_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_test_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Foo); i {
 			case 0:
 				return &v.state
@@ -380,7 +379,7 @@ func file_proto_test_proto_init() {
 				return nil
 			}
 		}
-		file_proto_test_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+		file_test_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*MyMessage1); i {
 			case 0:
 				return &v.state
@@ -392,7 +391,7 @@ func file_proto_test_proto_init() {
 				return nil
 			}
 		}
-		file_proto_test_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+		file_test_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*MyMessage2); i {
 			case 0:
 				return &v.state
@@ -409,19 +408,19 @@ func file_proto_test_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_proto_test_proto_rawDesc,
+			RawDescriptor: file_test_proto_rawDesc,
 			NumEnums:      2,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_proto_test_proto_goTypes,
-		DependencyIndexes: file_proto_test_proto_depIdxs,
-		EnumInfos:         file_proto_test_proto_enumTypes,
-		MessageInfos:      file_proto_test_proto_msgTypes,
+		GoTypes:           file_test_proto_goTypes,
+		DependencyIndexes: file_test_proto_depIdxs,
+		EnumInfos:         file_test_proto_enumTypes,
+		MessageInfos:      file_test_proto_msgTypes,
 	}.Build()
-	File_proto_test_proto = out.File
-	file_proto_test_proto_rawDesc = nil
-	file_proto_test_proto_goTypes = nil
-	file_proto_test_proto_depIdxs = nil
+	File_test_proto = out.File
+	file_test_proto_rawDesc = nil
+	file_test_proto_goTypes = nil
+	file_test_proto_depIdxs = nil
 }

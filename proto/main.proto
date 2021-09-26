@@ -1,0 +1,8 @@
+syntax = "proto3";
+option go_package = "github.com/butterfly-ci/syntax-generator";
+
+import "init.proto";
+
+message Main {
+  repeated Init init = 1;
+}
