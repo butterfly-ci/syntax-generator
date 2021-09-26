@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/butterfly-ci/syntax-generator";
+option go_package = "./proto";
 
 /*
 * Init is the config block that runs on every pipeline to define what it is
@@ -9,21 +9,15 @@ message Init {
     string link = 1;
     string branch_filter = 2;
   };
-  repeated Repo repo = 1;
+  Repo repo = 1;
   string base_image = 2;
   string docker_repo = 3;
   bool  docker_push = 4;
   bool docker_push_local = 5;
 
-  message Env {
-    string env_value = 1;
-  }
-  map<string, Env> env_value = 6;
+  map<string, string> env = 6;
 
-  message Secrets {
-    string secret_value = 1;
-  }
-  map<string, Secrets> secret_value = 7;
-  map<string, string> teddy = 8;
-
+  map<string, string> secrets = 7;
+  
+  repeated string commands = 9;
 }

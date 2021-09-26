@@ -7,4 +7,7 @@ require (
 	sigs.k8s.io/yaml v1.2.0
 )
 
-require gopkg.in/yaml.v2 v2.2.8 // indirect
+require (
+	github.com/gogo/protobuf v1.3.2 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
+)

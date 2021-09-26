@@ -32,6 +32,6 @@ init:
     - ESCAPED='yeah'; echo allow for shell ${ESCAPED} variables
     - echo we want to see ${KEY}
 
-# do things below!
-main:
-  - name: first step to execute. normal yaml array.
+# # do things below!
+# main:
+#   - name: first step to execute. normal yaml array.
